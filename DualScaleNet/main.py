@@ -11,7 +11,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from torch import nn
 from resnet import resnet18 as resnet
-from lightly.models.modules import SimSiamPredictionHead, SimSiamProjectionHead
+from lightly import SimSiamPredictionHead, SimSiamProjectionHead
 from transform import AugmentedImageSplitter
 from fundus_dataset import Fundus_Dataset
 from Loss import custom_similarity_loss
