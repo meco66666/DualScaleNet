@@ -6,5 +6,5 @@ Install PyTorch and DDR dataset following the https://github.com/nkicsl/DDR-data
 ### Self-Supervised Training
 The implementation supports single-GPU training and has been empirically validated via self-supervised pretraining on an NVIDIA RTX 3090.
 ```python
-python DualScaleNet/main.py
+python main.py
 ```
