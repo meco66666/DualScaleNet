@@ -2,7 +2,8 @@
 This repository contains the implementation of DualScaleNet, a dual-branch contrastive learning framework designed for medical image segmentation. 
 ![123](https://github.com/meco66666/DualScaleNet/blob/main/12.png?raw=true)
 ### Preparation
-Install PyTorch and DDR dataset
+Install PyTorch and DDR dataset.
+
 The dataset is available for download at https://github.com/nkicsl/DDR-dataset. The dataset is organized as follows. To construct the self-supervised training set, images from the test set need to be manually merged with the training set.
 ```
 ddr_757
