@@ -1,8 +1,8 @@
 ## DualScaleNet: A Self-Supervised Dual-Branch Contrastive Learning Framework for Enhanced Medical Image Segmentation
-### Introduction 
+## Introduction 
 This repository provides the implementation of DualScaleNet, a dual-branch contrastive learning framework that achieves annotation-efficient performance improvement in medical image segmentation tasks.
 ![123](https://github.com/meco66666/DualScaleNet/blob/main/DualScaleNet.png?raw=true)
-### Self-supervised Preparation
+## Self-supervised Preparation
 Install PyTorch and DDR dataset.
 ```bash
 conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
@@ -19,7 +19,7 @@ DualScaleNet/
         └── test/            # Test images to be merged with training set
 ```
 The training process solely relies on the image data, without utilizing any label annotations.
-### Self-Supervised Training
+## Self-Supervised Training
 * Default hyperparameters match those in our paper
 
 * Tested on NVIDIA RTX 3090
@@ -29,9 +29,9 @@ The training process solely relies on the image data, without utilizing any labe
 python DualScaleNet/main.py
 ```
 The script uses the default hyperparameters specified in the DualScaleNet paper.
-### Downstream task evaluation
+## Downstream task evaluation
 Freeze the weights/features trained by DualScaleNet and evaluate its performance on downstream tasks.
-#### DataSet
+### DataSet
 We evaluate our method on five publicly available fundus image datasets:
 - [DRIVE](https://drive.grand-challenge.org/) (Digital Retinal Images for Vessel Extraction)
 - [STARE](https://cecas.clemson.edu/~ahoover/stare/) (STructured Analysis of the Retina)
