@@ -37,7 +37,8 @@ We evaluate our method on five publicly available fundus image datasets:
 - [IDRiD](https://idrid.grand-challenge.org/) (Indian Diabetic Retinopathy Image Dataset)
 ```python
 DownStream/
-
+python train.py
+python predict.py
 ```
 
 
