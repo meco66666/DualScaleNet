@@ -20,7 +20,7 @@ DualScaleNet/
 ```
 The training process solely relies on the image data, without utilizing any label annotations.
 ## Self-Supervised Training
-* Default hyperparameters match those in our paper
+* Default hyperparameters match those in DualScaleNet paper
 
 * Tested on NVIDIA RTX 3090
 
