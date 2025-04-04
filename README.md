@@ -36,9 +36,8 @@ We evaluate our method on five publicly available fundus image datasets:
 - [Drishti-GS](https://cvit.iiit.ac.in/projects/mip/drishti-gs/mip-dataset2/Home.php) (Drishti-Glaucoma Screening)
 - [IDRiD](https://idrid.grand-challenge.org/) (Indian Diabetic Retinopathy Image Dataset)
 ```python
-DownStream/
-python train.py
-python predict.py
+python DownStream/train.py
+python DownStream/predict.py
 ```
 
 
