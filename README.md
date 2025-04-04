@@ -1,6 +1,6 @@
 ## DualScaleNet: A Self-Supervised Dual-Branch Contrastive Learning Framework for Enhanced Medical Image Segmentation
 ### Introduction 
-This repository contains the implementation of DualScaleNet, a dual-branch contrastive learning framework designed for medical image segmentation. 
+This repository provides the implementation of DualScaleNet, a dual-branch contrastive learning framework that achieves annotation-efficient performance improvement in medical image segmentation tasks.
 ![123](https://github.com/meco66666/DualScaleNet/blob/main/DualScaleNet.png?raw=true)
 ### Self-supervised Preparation
 Install PyTorch and DDR dataset.
