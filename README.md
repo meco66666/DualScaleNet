@@ -1,7 +1,7 @@
 ## DualScaleNet: A Self-Supervised Dual-Branch Contrastive Learning Framework for Enhanced Medical Image Segmentation
 This repository contains the implementation of DualScaleNet, a dual-branch contrastive learning framework designed for medical image segmentation. 
 ![123](https://github.com/meco66666/DualScaleNet/blob/main/12.png?raw=true)
-### Preparation
+### Self-supervised Preparation
 Install PyTorch and DDR dataset.
 The DDR dataset is available for download at https://github.com/nkicsl/DDR-dataset. The dataset is organized as follows. To construct the self-supervised training set, images from the test set need to be manually merged with the training set.
 ```
@@ -26,3 +26,23 @@ The implementation supports single-GPU training and has been empirically validat
 python DualScaleNet/main.py
 ```
 The script uses the default hyperparameters specified in the DualScaleNet paper.
+### Downstream task evaluation
+Freeze the weights/features trained by DualScaleNet and evaluate its performance on downstream tasks.
+#### DataSet
+We evaluate our method on five publicly available fundus image datasets:
+- [DRIVE](https://drive.grand-challenge.org/) (Digital Retinal Images for Vessel Extraction)
+- [STARE](https://cecas.clemson.edu/~ahoover/stare/) (STructured Analysis of the Retina)
+- [RIM-ONE-r3](https://rimone.webs.ull.es/) (Retinal IMage ONline Examination)
+- [Drishti-GS](https://cvit.iiit.ac.in/projects/mip/drishti-gs/mip-dataset2/Home.php) (Drishti-Glaucoma Screening)
+- [IDRiD](https://idrid.grand-challenge.org/) (Indian Diabetic Retinopathy Image Dataset)
+```python
+DownStream/
+
+```
+
+
+
+
+
+
+
