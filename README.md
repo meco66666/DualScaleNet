@@ -23,6 +23,16 @@ DualScaleNet/
                     20170627170651362.jpg
                     ...
 ```
+```
+DualScaleNet/
+└── Dataset/
+    └── ddr_757/
+        ├── train/
+        │   ├── img/          # Training images (e.g. 20170629163635747.jpg)
+        │   └── label/       # Unused in pretraining
+        ├── val/             # Validation set
+        └── test/            # Test images to be merged with training set
+```
 The training process solely relies on the image data, without utilizing any label annotations.
 ### Self-Supervised Training
 The implementation supports single-GPU training and has been empirically validated via self-supervised pretraining on an NVIDIA RTX 3090.
