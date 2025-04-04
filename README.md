@@ -23,3 +23,4 @@ The implementation supports single-GPU training and has been empirically validat
 ```python
 python DualScaleNet/main.py
 ```
+The script uses the default hyperparameters specified in the DualScaleNet paper.
