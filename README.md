@@ -5,17 +5,19 @@ This repository contains the implementation of DualScaleNet, a dual-branch contr
 Install PyTorch and DDR dataset.
 The DDR dataset is available for download at https://github.com/nkicsl/DDR-dataset. The dataset is organized as follows. To construct the self-supervised training set, images from the test set need to be manually merged with the training set.
 ```
-DualScaleNet/Dataset/ddr_757
-    train/
-        img/
-            20170629163635747.jpg
-            ...
-        label/
-    val/
-    test/
-        img/
-            20170627170651362.jpg
-            ...
+DualScaleNet/
+    Dataset/
+        ddr_757/
+            train/
+                img/
+                    20170629163635747.jpg
+                    ...
+                label/
+            val/
+            test/
+                img/
+                    20170627170651362.jpg
+                    ...
 ```
 The training process solely relies on the image data, without utilizing any label annotations.
 ### Self-Supervised Training
