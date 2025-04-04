@@ -3,8 +3,7 @@ This repository contains the implementation of DualScaleNet, a dual-branch contr
 ![123](https://github.com/meco66666/DualScaleNet/blob/main/12.png?raw=true)
 ### Preparation
 Install PyTorch and DDR dataset.
-
-The dataset is available for download at https://github.com/nkicsl/DDR-dataset. The dataset is organized as follows. To construct the self-supervised training set, images from the test set need to be manually merged with the training set.
+The DDR dataset is available for download at https://github.com/nkicsl/DDR-dataset. The dataset is organized as follows. To construct the self-supervised training set, images from the test set need to be manually merged with the training set.
 ```
 ddr_757
     train/
@@ -22,5 +21,5 @@ The training process solely relies on the image data, without utilizing any labe
 ### Self-Supervised Training
 The implementation supports single-GPU training and has been empirically validated via self-supervised pretraining on an NVIDIA RTX 3090.
 ```python
-python main.py
+python DualScaleNet/main.py
 ```
