@@ -20,11 +20,11 @@ DualScaleNet/
 ```
 The training process solely relies on the image data, without utilizing any label annotations.
 ### Self-Supervised Training
-*Default hyperparameters match those in our paper
+* Default hyperparameters match those in our paper
 
-*Tested on NVIDIA RTX 3090 (24GB VRAM)
+* Tested on NVIDIA RTX 3090
 
-*Single-GPU training supported
+* Single-GPU training supported
 ```python
 python DualScaleNet/main.py
 ```
