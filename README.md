@@ -4,6 +4,9 @@ This repository contains the implementation of DualScaleNet, a dual-branch contr
 ![123](https://github.com/meco66666/DualScaleNet/blob/main/DualScaleNet.png?raw=true)
 ### Self-supervised Preparation
 Install PyTorch and DDR dataset.
+```bash
+conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+```
 The DDR dataset is available for download at https://github.com/nkicsl/DDR-dataset. The dataset is organized as follows. To construct the self-supervised training set, images from the test set need to be manually merged with the training set.
 ```
 DualScaleNet/
