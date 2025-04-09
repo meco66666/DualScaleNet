@@ -38,6 +38,8 @@ We evaluate our method on five publicly available fundus image datasets:
 - [RIM-ONE-r3](https://rimone.webs.ull.es/) (Retinal IMage ONline Examination)
 - [Drishti-GS](https://cvit.iiit.ac.in/projects/mip/drishti-gs/mip-dataset2/Home.php) (Drishti-Glaucoma Screening)
 - [IDRiD](https://idrid.grand-challenge.org/) (Indian Diabetic Retinopathy Image Dataset)
+
+Execute the following code for downstream task training and evaluation.
 ```python
 python DownStream/train.py
 python DownStream/predict.py
