@@ -102,7 +102,7 @@ for epoch in range(epochs):
         patch_loss = custom_similarity_loss(zx_vars,zy_vars)
         patch_losses.append(patch_loss.detach().item())
         
-        loss = 0.8 * global_loss + 0.2 * patch_loss
+        loss = 0.5 * global_loss + 0.5 * patch_loss
         total_loss += loss.detach().item()
         loss.backward()
         optimizer.step()
