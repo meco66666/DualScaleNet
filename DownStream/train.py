@@ -26,7 +26,7 @@ if dataset_name == "idrid":
 if dataset_name == "drive":
     train_data_path = "dataset/drive/train/"
     valid_data_path = "dataset/drive/test/"
-    N_epochs = 280
+    N_epochs = 400
     # lr_decay_step = [100]
     lr_init = 0.001
     batch_size = 1
@@ -38,7 +38,7 @@ if dataset_name == "drive":
 if dataset_name == "stare":
     train_data_path = "dataset/stare/train/"
     valid_data_path = "dataset/stare/test/"
-    N_epochs = 300      #epoch = 400
+    N_epochs = 400      #epoch = 400
     # lr_decay_step = [100]
     lr_init = 0.001
     batch_size = 1
@@ -143,8 +143,8 @@ def train_net(net, device, epochs=N_epochs, batch_size=batch_size, lr=lr_init):
             # net.state_dict()就是用来保存模型参数的
             if val_loss < best_loss:
                 best_loss = val_loss
-                #torch.save(net.state_dict(), 'weight_files/simsiam/'+dataset_name+'_757images_64b_Adam5000.pth')
-                torch.save(net.state_dict(), 'weight_files/patch消融实验/' + dataset_name + '_0.3_3500e.pth')
+                torch.save(net.state_dict(), 'weight_files/simsiam/'+dataset_name+'_757images_64b_Adam5000.pth')
+                #torch.save(net.state_dict(), 'weight_files/patch消融实验/' + dataset_name + '_0.3_3500e.pth')
                 #torch.save(net.state_dict(), 'weight_files/withoutSSL/'+dataset_name+'.pth')
                 print('saving model............................................')
         
